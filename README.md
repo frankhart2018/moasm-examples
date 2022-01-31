@@ -18,3 +18,7 @@ user@programmer~:$ pytest tests/* -s
 ```bash
 user@programmer~:$ python tests/code_tests.py
 ```
+
+## Use case 2
+
+The second use case (testing the MoASM assembler) is only for MoASM contributors, to check if their changes broke any running program or not.
