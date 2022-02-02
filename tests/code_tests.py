@@ -43,6 +43,7 @@ class CodeTest(unittest.TestCase):
         print()
         test_failed = 0
         for i, file_name in enumerate(file_paths):
+            print(f"\u231B Running {file_name}!")
             output_file_name = ".".join(os.path.basename(file_name).split(".")[:-1])
             output_file_path = os.path.join("outputs", output_file_name)
             self.__get_moasm_output(file_name)
