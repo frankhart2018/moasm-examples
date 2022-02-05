@@ -22,7 +22,7 @@ class CodeTest(unittest.TestCase):
     def __get_moasm_output(self, file_name):
         tokens: List[PreToken] = PreTokenizer(source_file_path=file_name).tokenize()
         groups: List[List[str]] = Grouper(tokens=tokens).group()
-        tokens: List[Token] = Tokenizer(groups=groups).tokenize()
+        tokens: List[Token] = Tokenizer(groups=groups).tokenize(dump_late_groups=False, file_name="")
         ast_root: Node = Parser(tokens=tokens).parse()
         bytecode: List[OpCode] = Compiler(ast_root=ast_root).compile()
         vm: VM = VM(opcodes=bytecode)
