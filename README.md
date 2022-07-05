@@ -1,5 +1,7 @@
 # MoASM Examples
 
+:no_entry: [DEPRECATED] Will be moved to https://github.com/yamini-vm/moasm.git soon.
+
 This repository has two important uses:
 
 1. It provides valid code examples of programs that MoASM assembler can run successfully.
